@@ -4,7 +4,7 @@ const getAllSymbols = async () => {
     const URL = "https://api.apilayer.com/exchangerates_data/symbols";
 
     const headers = new Headers();
-    headers.append("apikey", "bH06UnChD1gukOjPepYr8pwlFKpl0MKJ");
+    headers.append("apikey", "8ziGjYeKavPAk9Y8PUshqsCfmJpUFj1P");
 
     const response = await fetch(URL, { headers });
     const json = await response.json();
@@ -34,7 +34,7 @@ const getConversion = async (from, to, amount) => {
     const url = `https://api.apilayer.com/exchangerates_data/convert?from=${from}&to=${to}&amount=${amount}`;
 
     const headers = new Headers();
-    headers.append("apikey", "bH06UnChD1gukOjPepYr8pwlFKpl0MKJ");
+    headers.append("apikey", "8ziGjYeKavPAk9Y8PUshqsCfmJpUFj1P");
 
     const response = await fetch(url, { headers });
     const json = await response.json();
