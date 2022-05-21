@@ -29,7 +29,7 @@ const Converter = () => {
   useEffect(() => {
     const handleGetConversion = async () => {
       if(typeof firstValue !== "number" || !option.length || touch !== "1") return;
-      if(firstValue == 0) {
+      if(firstValue === 0) {
         setSecondValue(0);
         return;
       }
@@ -46,7 +46,7 @@ const Converter = () => {
   useEffect(() => { 
     const handleGetConversion = async () => {
       if(typeof secondValue !== "number" || !option.length || touch !== "2") return;
-      if(secondValue == 0) {
+      if(secondValue === 0) {
         setFirstValue(0);
         return;
       }

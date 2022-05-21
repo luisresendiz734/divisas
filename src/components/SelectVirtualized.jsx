@@ -1,8 +1,8 @@
-import { FormControl, FormHelperText, InputLabel, Typography } from "@mui/material";
+import { FormControl, FormHelperText } from "@mui/material";
 import WindowedSelect from "react-windowed-select";
 
 
-const SelectVirtualized = ({ option, setOption, options }) => {
+const SelectVirtualized = ({ setOption, options }) => {
   return (
     <>
       <FormControl variant="standard">
